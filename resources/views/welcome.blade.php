@@ -31,6 +31,7 @@
                 </div>
             </form>
             <br />
+            <div id="p"></div>
             <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow=""
                      aria-valuemin="0" aria-valuemax="100" style="width: 0%">
@@ -57,6 +58,7 @@
             },
             uploadProgress:function(event, position, total, percentComplete)
             {
+
                 $('.progress-bar').text(percentComplete + '%');
                 $('.progress-bar').css('width', percentComplete + '%');
             },
